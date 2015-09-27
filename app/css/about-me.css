@@ -1,0 +1,73 @@
+.aboutbox{
+	background: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 26px;
+}
+.aboutbox .aboutbox-header{
+	font-family: "FiraSansBook";
+	font-size: 27px;
+	font-weight: normal;
+	color: #3ba8c0;
+	border-bottom: 2px solid #3ba8c0;
+	margin: 0 0 23px 0;
+	padding: 13px 23px;
+	display: inline-block;
+}
+.aboutbox-body{
+	padding-bottom: 40px;
+}
+
+.image-wrap{
+	float:left;
+	margin-left: 55px;
+	margin-top: 18px;
+}
+.avatar-box{
+	width: 142px;
+	height: 142px;
+	border-radius: 50% 50%;
+	overflow: hidden;
+	border: 5px solid #3ba8c0;
+}
+.worksheet-info{
+	font-family: "FiraSansBook";
+	font-size: 15px;
+	overflow: hidden;
+	max-width: 218px;
+	float: left;
+	margin-left: 25px;
+}
+.aboutbox .worksheet-wrap{
+	float:right;
+	width: 400px;
+}
+.worksheet-info .skills-list{
+	width: 224px;
+	padding: 0;
+	list-style: none;
+}
+.skills-list .skill-item{
+	display: inline-block;
+	font-family: "ProximaNovaCondensedSemiBold";
+	background: #3ba8c0;
+	background: ;
+	border-radius: 4px;
+	padding: 0 7px;
+	margin-right: 6px;
+	color: #fff;
+	display: inline-block;
+	line-height: 1.2;
+	min-width: 40px;
+	text-align: center;
+}
+.aboutbox .aboutbox-item{
+	padding: 0 0 0 76px;
+	margin-bottom: 20px;
+}
+.aboutbox-item .where {
+	font-family: "FiraSansBook";
+	font-size: 16px;
+}
+.aboutbox-item .icon-work{
+	background: url(../img/bag.png) 9px center no-repeat;
+}
