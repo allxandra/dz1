@@ -129,7 +129,9 @@ body {
 	color: #3ba8c0;
 }
 
-
+address {
+	font-style: normal;
+}
 .contacts{
 	overflow: hidden;
 	border-radius: 4px;
@@ -141,10 +143,48 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+
+.contacts-header{
+	font-family: "FiraSansBook", "SansSerif";
+	font-weight: normal;
+	display: block;
+	font-size: 21px;
+	text-decoration: none;
+	color: #fff;
+	margin: 6px 0 0 21px;
+}
 .contacts .contacts-item {
-	margin: 0 11px;
+	margin: 8px 42px;
 }
 
+.contacts .contacts-item:first-child{
+	background: #41b9d4;
+
+}
+.contacts  .contacts-link{
+	color: #f9fafb;
+	font-size: 22px;
+}
+.contacts .contacts-link{
+	font-family: "FiraSansBook", "SansSerif";
+	display: block;
+	font-size: 20px;
+	text-decoration: none;
+	color: #959aa8;
+	margin-left: 16px;
+	padding: 20px 0px;
+}
+.navigation .navigation-link:hover{
+	color: #3ba8c0;
+}
+
+.contacts .contacts-item a.contacts-mail:before {
+	content: " ";
+	display: inline-block;
+	width: 21px;
+	background: url(../img/mail.png) center no-repeat;
+}
 
 
 
@@ -172,29 +212,26 @@ body {
 
 .page-footer .lock{
 	position: absolute;
-	top:26px;
+	top: 26px;
 	left: 20px;
 }
 .lock .lock-inner{
 	display: block;
 	height: 40px;
-	font-family: "FiraSansBook", "SansSerif";
-	font-size: 16px;
-	line-height: 2.2;
-	color: #4a545d;
-	text-decoration: none;
 	background: url(../img/lock.png) no-repeat;
 	padding-left: 24px;
+	text-indent: -9999px;
+
 }
 .lock .lock-inner:hover{
-	text-decoration: underline;
+	background: url(../img/openlock.png) no-repeat;
 }
 
-.container:before, .clearfix:before, .container:after, clearfix:after{
+.container:before, .clearfix:before, .container:after, .clearfix:after{
 	content: " ";
 	display: table;
 }
-.container:after, clearfix:after{
+.container:after, .clearfix:after{
 	clear: both;
 }
 
