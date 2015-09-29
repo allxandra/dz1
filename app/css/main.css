@@ -159,14 +159,14 @@ address {
 	padding:6px 0 7px 0;
 }
 
-.contacts .contacts-item:nth-child(1){
-	background: #41b9d4;
+.mail{
+	background-color: rgb(65, 185, 212);
 }
-.contacts .contacts-item:nth-child(2){
-	background: #48cbe8;
+.phone{
+	background-color: rgb(72, 203, 232);
 }
-.contacts .contacts-item:nth-child(3){
-	background: #51daf8;
+.skype{
+	background-color: rgb(81, 218, 248);
 }
 .contacts .contacts-link{
 	font-family: "FiraSansBook", "SansSerif";
@@ -174,7 +174,7 @@ address {
 	font-size: 17px;
 	text-decoration: none;
 	color: #fff;
-	margin-left: 16px;
+	margin-left: 42px;
 	padding: 0px 0px;
 
 }
@@ -183,22 +183,22 @@ address {
 	text-decoration: underline;
 }
 .contacts .contacts-link:before{
-	content: " ";
-	display: inline-block;
+	content:" ";
+	display:block;
 	width: 42px;
+	height: 21px;
+	float:left;
+	
 }
 
-.contacts .contacts-link .mail:before {
-	background: url(../img/mail.png) left no-repeat;
-}
-
-
+.mail a.contacts-link:before {background: url(../img/mail.png) left no-repeat;}
+.phone a.contacts-link:before {background: url(../img/phone.png) left no-repeat;}
+.skype a.contacts-link:before {background: url(../img/skype.png) left no-repeat;}
 
 .variable-content{
 	width: 650px;
 	float: right;
 }
-
 
 .page-footer{
 	background: #eff3f7 url(../img/line.png) top center no-repeat;
