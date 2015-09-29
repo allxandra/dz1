@@ -91,7 +91,7 @@ body {
 	overflow: hidden;
 	background: #eff3f7;
 	border-radius: 4px;
-	margin-bottom: 26px;
+	margin-bottom: 25px;
 }
 .navigation .navigation-list{
 	list-style: none;
@@ -155,35 +155,41 @@ address {
 	margin: 6px 0 0 21px;
 }
 .contacts .contacts-item {
-	margin: 8px 42px;
+	display: block;
+	padding:6px 0 7px 0;
 }
 
-.contacts .contacts-item:first-child{
+.contacts .contacts-item:nth-child(1){
 	background: #41b9d4;
-
 }
-.contacts  .contacts-link{
-	color: #f9fafb;
-	font-size: 22px;
+.contacts .contacts-item:nth-child(2){
+	background: #48cbe8;
+}
+.contacts .contacts-item:nth-child(3){
+	background: #51daf8;
 }
 .contacts .contacts-link{
 	font-family: "FiraSansBook", "SansSerif";
 	display: block;
-	font-size: 20px;
+	font-size: 17px;
 	text-decoration: none;
-	color: #959aa8;
+	color: #fff;
 	margin-left: 16px;
-	padding: 20px 0px;
-}
-.navigation .navigation-link:hover{
-	color: #3ba8c0;
-}
+	padding: 0px 0px;
 
-.contacts .contacts-item a.contacts-mail:before {
+}
+.contacts .contacts-link:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+.contacts .contacts-link:before{
 	content: " ";
 	display: inline-block;
-	width: 21px;
-	background: url(../img/mail.png) center no-repeat;
+	width: 42px;
+}
+
+.contacts .contacts-link .mail:before {
+	background: url(../img/mail.png) left no-repeat;
 }
 
 
