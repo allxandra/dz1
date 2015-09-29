@@ -22,3 +22,11 @@
 	font-style: normal;
 	font-weight: normal;
 }
+@font-face {
+	font-family: 'FiraSansMedium';
+	src: url('../fonts/firasans-medium.eot');
+	src: url('../fonts/firasans-medium.woff') format('woff'),
+		 url('../fonts/firasans-medium.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
