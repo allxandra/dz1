@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'FiraSansBook';
+	src: url('firasans-book.eot');
+	src: url('firasans-book.woff') format('woff'),
+		 url('firasans-book.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'FiraSansLight';
+	src: url('firasans-light.eot');
+	src: url('firasans-light.woff') format('woff'),
+		 url('firasans-light.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'FiraSansBold';
+	src: url('firasans-bold.eot');
+	src: url('firasans-bold.woff') format('woff'),
+		 url('firasans-bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'FiraSansMedium';
+	src: url('firasans-medium.eot');
+	src: url('firasans-medium.woff') format('woff'),
+		 url('firasans-medium.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'ProximaNovaCond-Semibold';
+	src: url('ProximaNovaCond-Semibold.eot');
+	src: url('ProximaNovaCond-Semibold.woff') format('woff'),
+		 url('ProximaNovaCond-Semibold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}

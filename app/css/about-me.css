@@ -1,7 +1,11 @@
 .aboutbox{
-	background: #eff3f7;
+	background-color: #eff3f7;
 	border-radius: 4px;
 	margin-bottom: 26px;
+	width: 650px;
+	overflow: hidden;
+	padding-bottom: 35px;
+	margin-bottom: 21px;
 }
 .aboutbox .aboutbox-header{
 	font-family: "FiraSansBook";
@@ -12,12 +16,8 @@
 	margin: 0 0 19px 0;
 	padding: 13px 23px;
 	display: inline-block;	
-}
-.aboutbox-body{
-	padding-bottom: 40px;
-	padding-right: 23px; 
-}
 
+}
 .image-wrap{
 	float:left;
 	margin-left: 55px;
@@ -26,69 +26,113 @@
 .aboutbox .avatar-box{
 	width: 140px;
 	height: 140px;
-	border-radius: 50% 50%;
+	border-radius: 50%;
 	overflow: hidden;
 	border: 5px solid #3ba8c0;
 }
-.aboutbox .worksheet-wrap{
-	float:right;
-	width: 400px;
-	overflow: hidden;
-}
 .aboutbox .worksheet-list{
-	list-style: none;
-	margin: 0;
+	margin:0 10px 0 0;
 	padding: 0;
 }
 .aboutbox .worksheet-item{
-	padding-bottom:8px;
+	margin-bottom:6px;
+	list-style: none;
+	width: 410px;
+	float: right;
+	color: #37424d;
 }
 
 .worksheet-what{
 	font-family: "FiraSansMedium", "SansSerif";
 	font-size: 17px;
-	display: block;
-	float: left;	
+	float: left;
 }
-
 .worksheet-info{
-	font-family: "FiraSansBook";
+	float: left;
+	max-width: 225px;
+	margin-left: 18px;
+	font-family: "FiraSansBook", "SansSerif";
 	font-size: 15px;
-	font-weight: bold;
-	max-width: 224px;
-	margin-left: 23px;
-	display: inline-block;
 }
 
-.worksheet-info .skills-list{
+ ul.skills-list{
 	width: 224px;
-	padding: 0;
 	list-style: none;
-	margin-left: 23px;
-	display: inline-block;
+	margin-left: 22px;
+	margin-top: 6px;
+	padding: 0px;
+	float: left;
 }
 .skills-list .skill-item{
 	display: inline-block;
-	font-family: "ProximaNovaCondensedSemiBold";
+	font-family: "ProximaNovaCond-Semibold", "SansSerif";
 	background: #3ba8c0;
-	background: ;
-	border-radius: 4px;
-	padding: 0 7px;
-	margin-right: 6px;
+	background: rgb(59,168,192);
+background: -moz-linear-gradient(top, rgba(59,168,192,1) 0%, rgba(59,168,192,1) 48%, rgba(59,168,192,1) 48%, rgba(46,140,162,1) 49%, rgba(46,140,162,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(59,168,192,1)), color-stop(48%,rgba(59,168,192,1)), color-stop(48%,rgba(59,168,192,1)), color-stop(49%,rgba(46,140,162,1)), color-stop(100%,rgba(46,140,162,1)));
+background: -webkit-linear-gradient(top, rgba(59,168,192,1) 0%,rgba(59,168,192,1) 48%,rgba(59,168,192,1) 48%,rgba(46,140,162,1) 49%,rgba(46,140,162,1) 100%);
+background: -o-linear-gradient(top, rgba(59,168,192,1) 0%,rgba(59,168,192,1) 48%,rgba(59,168,192,1) 48%,rgba(46,140,162,1) 49%,rgba(46,140,162,1) 100%);
+background: -ms-linear-gradient(top, rgba(59,168,192,1) 0%,rgba(59,168,192,1) 48%,rgba(59,168,192,1) 48%,rgba(46,140,162,1) 49%,rgba(46,140,162,1) 100%);
+background: linear-gradient(to bottom, rgba(59,168,192,1) 0%,rgba(59,168,192,1) 48%,rgba(59,168,192,1) 48%,rgba(46,140,162,1) 49%,rgba(46,140,162,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ba8c0', endColorstr='#2e8ca2',GradientType=0 ); 
+	border-radius: 2px;
+	padding: 0 14px;
+	margin: 5px 2px 5px 0;
 	color: #fff;
-	display: inline-block;
-	line-height: 1.2;
-	min-width: 40px;
+	line-height:19px;
 	text-align: center;
+	font-size: 14px;
+	font-weight: bolder;
 }
-.aboutbox .aboutbox-item{
-	padding: 0 0 0 76px;
-	margin-bottom: 20px;
+
+.work-list{
+  	margin: 0;
+  	padding-left: 50px;
+ }
+.work-list .work-item{
+	list-style: none;
+	position: relative;
+  	padding-left: 70px; 
+  	margin-bottom: 17px;
+  	max-width: 476px;	
+ } 
+.work-list .work-icon:before{
+	content: '';
+	display: block;
+	position: absolute;
+	left: 10px;
+	top:4px;
+	width: 38px;
+	height: 42px;
+	background: url(../img/bag.png) no-repeat;
 }
-.aboutbox-item .where {
-	font-family: "FiraSansBook";
-	font-size: 16px;
+.work-list .work-where{
+  color: #4a545d;
+  font-size: 17px;
+  }
+.work-list .work-when{
+  color: #4a545d;
+  font-size: 15px;
+  font-family: "FiraSansLight", "SansSerif";
+  line-height: 15px;
 }
-.aboutbox-item .icon-work{
-	background: url(../img/bag.png) 9px center no-repeat;
+.edu-icon:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 7px;
+	top:5px;
+	width: 43px;
+	height: 26px;
+	background: url(../img/cap.png) no-repeat;
+}
+.edu__icon:before{
+	content: '';
+	display: block;
+	position: absolute;
+	left: 15px;
+	top:5px;
+	width: 26px;
+	height: 33px;
+	background: url(../img/list.png) no-repeat;
 }

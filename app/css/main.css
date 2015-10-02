@@ -219,7 +219,7 @@ address {
 .page-footer .lock{
 	position: absolute;
 	top: 26px;
-	left: 20px;
+	left: 30px;
 }
 .lock .lock-inner{
 	display: block;
