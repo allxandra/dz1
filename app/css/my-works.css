@@ -1,0 +1,48 @@
+.myworks-wrap{
+	margin:0 5px;
+}
+.myworks-item{
+	display: inline-block;
+	width: 180px;
+	vertical-align: top;
+	min-height: 200px;
+	margin:5px 15px; 
+}
+.myworks-item .myworks-image-box{
+	width: 180px;
+	height: 125px;
+	overflow: hidden;
+	border: 2px solid #3ba8c0;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+.myworks-item .myworks-image-box:hover{
+	background-color:#4191bb;
+}
+.myworks-item .img-work{
+	width: 100%;
+}
+.myworks-item .myworks-url {
+	text-align: center;
+	font-family: "FiraSansLightItalic", "SansSerif";
+	font-size: 13px;
+	color: #47adc4;
+	margin-bottom: 13px;
+}
+.myworks-item .works-link{
+	text-decoration: none;
+	color: #47adc4;
+}
+.myworks-item .myworks-info{
+	padding: 0;
+	
+}
+.myworks-item .myworks-info-about{
+	padding: 0;
+	text-align: center;
+	font-family: "FiraSansLight", "SansSerif";
+	font-size: 15px;
+	color: #606972;
+	line-height: 15px;
+	margin-bottom: 2px;
+}

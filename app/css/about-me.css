@@ -16,7 +16,6 @@
 	margin: 0 0 19px 0;
 	padding: 13px 23px;
 	display: inline-block;	
-
 }
 .image-wrap{
 	float:left;
@@ -29,6 +28,9 @@
 	border-radius: 50%;
 	overflow: hidden;
 	border: 5px solid #3ba8c0;
+}
+.aboutbox .avatar{
+	width: 100%;
 }
 .aboutbox .worksheet-list{
 	margin:0 10px 0 0;

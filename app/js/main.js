@@ -1,4 +1,3 @@
-$(document).ready(function() {
-	console.log('js запустился')
-	console.log('$')
+jQuery(document).ready(function($) {
+	console.log('Это главная страница');
 });
