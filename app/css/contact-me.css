@@ -1,0 +1,28 @@
+.contactbox-header {
+	font-family: "FiraSansBook";
+	font-size: 27px;
+	font-weight: normal;
+	text-align: center;
+	color: #fff;
+	background-color: #48cbe8;
+	border-bottom: 20px solid #67dffa;
+	margin: 0 0 50px 0;
+	padding: 39px 0;
+}
+.contactbox-wrap {
+	width: 400px;
+	margin:0 auto;
+	padding:0;
+	border: 1px solid #67dffa;
+}
+.contactbox-aboutperson{
+	padding:0;
+	vertical-align: top;
+}
+.contactbox-aboutperson .contactbox-name{
+	display: inline-block;
+}
+.contactbox-aboutperson .contactbox-email{
+	display: inline-block;
+	width: 190px;
+}
