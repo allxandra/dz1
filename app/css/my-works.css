@@ -6,7 +6,7 @@
 	width: 180px;
 	vertical-align: top;
 	min-height: 200px;
-	margin:5px 15px; 
+	margin:5px 15px 35px 15px; 
 }
 .myworks-item .myworks-image-box{
 	width: 180px;
@@ -73,8 +73,7 @@
 	color: #47adc4;
 }
 .myworks-item .myworks-info{
-	padding: 0;
-	
+	padding: 0;	
 }
 .myworks-item .myworks-info-about{
 	padding: 0;
@@ -84,4 +83,35 @@
 	color: #606972;
 	line-height: 15px;
 	margin-bottom: 2px;
+}
+
+.myworks-item .myworks-add-wrap{
+	display: block;
+	width: 100%;
+	height: 128px;
+	border-radius: 4px;
+	overflow: hidden;	 
+	border:1px dashed #3ba8c0;
+	background: url(../img/add_works.png) center 35px no-repeat #edf8fc;
+	position: relative;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+.myworks-item .myworks-add-text {
+	font-size: 13px;
+	font-family: "FiraSansLight", "SansSerif";
+	top: 78px;
+	left:42px;
+	text-align: center;
+	position: absolute;
+	color:#3ba8c0;
+}
+.galery__add-image:hover{
+	border:1px solid #3ba8c0;
+	-webkit-box-shadow: 0 0 10px rgba(59, 168, 192, .5);
+	-moz-box-shadow: 0 0 10px rgba(59, 168, 192, .5);
+	box-shadow: 0 0 10px rgba(59, 168, 192, .5);
 }
