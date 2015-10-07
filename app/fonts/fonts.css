@@ -23,6 +23,14 @@
 	font-weight: normal;
 }
 @font-face {
+	font-family: 'FiraSansLightItalic';
+	src: url('firasans-lightitalic.eot');
+	src: url('firasans-lightitalic.woff') format('woff'),
+		 url('firasans-lightitalic.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
 	font-family: 'FiraSansMedium';
 	src: url('firasans-medium.eot');
 	src: url('firasans-medium.woff') format('woff'),

@@ -1,3 +1,7 @@
+.variable-content{
+	margin-bottom: 15px;
+
+}
 .contactbox-header {
 	font-family: "FiraSansBook";
 	font-size: 27px;
@@ -6,23 +10,104 @@
 	color: #fff;
 	background-color: #48cbe8;
 	border-bottom: 20px solid #67dffa;
-	margin: 0 0 50px 0;
+	margin: 0 0 36px 0;
 	padding: 39px 0;
 }
 .contactbox-wrap {
-	width: 400px;
-	margin:0 auto;
+	width: 403px;
+	margin:0 auto 200px auto;
 	padding:0;
-	border: 1px solid #67dffa;
 }
-.contactbox-aboutperson{
-	padding:0;
+.contactbox-name, .contactbox-email{
+ 	display: inline-block;
+    margin-bottom: 10px;
+    position: relative;
+ }
+ .contactbox-email {
+ 	margin-left: 15px;
+ }
+.contactbox-text{
+	display: block;
+ 	font-family: "FiraSansLight", "SansSerif";
+  	font-size: 19px;
+  	color: #848894;
+}
+.contactbox-input{
+	border: 1px solid #48cbe8;
+  	border-radius: 4px;
+  	color: #48cbe8;
+  	padding: 10px;
+  	height: 20px;
+  	width: 170px;
+}
+.contactbox-textarea{
+	width: 380px;
+  	height: 160px;
+  	resize:none;
+  	margin-bottom:5px;
+}
+
+::-webkit-input-placeholder {color:#54cee9; font-size: 13px; font-family:"FiraSansLight", "SansSerif"; }
+::-moz-placeholder          {color:#54cee9; font-size: 13px; font-family:"FiraSansLight", "SansSerif"; }/* Firefox 19+ */
+:-moz-placeholder           {color:#54cee9; font-size: 13px; font-family:"FiraSansLight", "SansSerif"; }/* Firefox 18- */
+:-ms-input-placeholder      {color:#54cee9; font-size: 13px; font-family:"FiraSansLight", "SansSerif"; }
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+.check-capcha{
+	font-size: 17px;
+}
+.contactbox-massege-code{
+  	width: 188px;
+  	height: 78px;
+  	border: 1px solid #48cbe8;
+  	border-radius: 4px;
+  	background: #fff;
+  	display: inline-block;
+  	margin-bottom: 20px;
+  	text-align: center;
+  	font-size: 45px;
+}
+.contactbox-capcha {
 	vertical-align: top;
+  	margin: 20px 0 0 15px;
+  	width: 172px;
+  	height: 20px;
+  	padding: 5px 10px;
 }
-.contactbox-aboutperson .contactbox-name{
-	display: inline-block;
+
+.contact-button{
+  	font-size: 1.1em;
+  	border-radius: 5px;
+  	padding: 3px 25px;
+  	color: #fff;
+  	border: none;
+  	outline: none;
 }
-.contactbox-aboutperson .contactbox-email{
-	display: inline-block;
-	width: 190px;
+.contact-button-submit{
+	background: #48cbe8;
+  	float: left;
+  	position: relative;
+  	overflow: hidden;
+  	box-shadow: 0 2px 0 #3ba8c0;
+}
+.contact-button-clear{
+  	background: #849db5;
+  	float: right;
+  	position: relative;
+  	overflow: hidden;
+  	box-shadow: 0 2px 0 #687b8f;
+}
+.contact-button-submit:hover,
+.contact-button-clear:hover{
+	-webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  margin: 2px 0 -2px;
+  box-shadow: none;
 }
