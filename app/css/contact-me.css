@@ -80,7 +80,8 @@
 }
 
 .contact-button{
-  	font-size: 1.1em;
+  	font-size: 19px;
+  	font-family: "FiraSansBook", "SansSerif";
   	border-radius: 5px;
   	padding: 3px 25px;
   	color: #fff;

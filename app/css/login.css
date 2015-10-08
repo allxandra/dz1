@@ -1,0 +1,98 @@
+.window-wrap{
+  position: fixed;
+  height: 100%;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+.window-wrap:after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+}
+.auth-wrap{
+  display: inline-block;
+  vertical-align: middle;
+  width: 590px;
+  height: 490px;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: #eff3f7;
+  box-shadow: 0 4px 7px rgba(0,0,0,.29);
+}
+.auth-wrap-header{
+	background-color: #48cbe8;
+  border-bottom: 15px solid #67dffa;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.auth-title{
+  font-family: "FiraSansBook", "SansSerif";
+  font-weight: normal;
+	margin: 0;
+  font-size: 40px;
+  padding: 16px 0;
+}
+.auth-form{
+	margin: auto;
+  width: 71.8%;
+  max-width: 422px;
+  text-align: center;
+}
+.auth-form-data{
+	margin-bottom: 11px;
+  text-align: center;
+}
+.auth-form-label{
+	font-size: 36px;
+  font-family: "FiraSansLight", "SansSerif";
+  color: #959aa8;
+}
+.auth-form-field{
+	display: block;
+  margin: 0 auto;
+}
+.auth-form-input{
+	border: 1px solid #48cbe8;
+  border-radius: 4px;
+  color: #48cbe8;
+  width: 400px;
+  height: 60px;
+  padding-left: 20px;
+}
+.auth-form-submit{
+  font-size: 36px;
+  font-family: "FiraSansBook", "SansSerif";
+  font-weight: normal;
+  border-radius: 7px;
+  width: 226px;
+  height: 50px;
+  text-align: center;
+  margin: 20px 0 0 0;
+  color: #fff;
+  border: none;
+  background: #48cbe8;
+  box-shadow: 0 4px 0 #3ba8c0;
+}
+.auth-form-data .last{
+  margin: 0;
+  padding: 0;
+}
+.auth-form-submit:hover{
+  margin: 24px 0 10px 0;
+  box-shadow: none;
+}
+::-webkit-input-placeholder {color:#54cee9; font-size: 17px; font-family:"FiraSansLight", "SansSerif"; }
+::-moz-placeholder          {color:#54cee9; font-size: 17px; font-family:"FiraSansLight", "SansSerif"; }/* Firefox 19+ */
+:-moz-placeholder           {color:#54cee9; font-size: 17px; font-family:"FiraSansLight", "SansSerif"; }/* Firefox 18- */
+:-ms-input-placeholder      {color:#54cee9; font-size: 17px; font-family:"FiraSansLight", "SansSerif"; }
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
