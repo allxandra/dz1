@@ -19,6 +19,7 @@
 }
 .myworks-item .img-work{
 	width: 100%;
+
 }
 
 .myworks-item .myworks-image-link-wrap{
@@ -35,7 +36,9 @@
   -moz-transition: all 0.1s linear 0s;
   -o-transition: all 0.1s linear 0s;
   transition: all 0.1s linear 0s;
+  cursor: pointer;
 }
+
 .myworks-item .myworks-image-link {
   width: 65px;
   display: block;
@@ -55,6 +58,7 @@
   -moz-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
+   cursor: pointer;
 }
 .myworks-item .myworks-image-box:hover div.myworks-image-link-wrap,
 .myworks-item .myworks-image-box:hover a.myworks-image-link {
@@ -99,6 +103,12 @@
 	-ms-transition: .3s;
 	-o-transition: .3s;
 	transition: .3s;
+	 cursor: pointer;
+}
+.myworks-item .myworks-add-wrap:hover{
+	opacity: 0.7;
+	border:1px solid #3ba8c0;
+	background: url(../img/add_works.png) center 35px no-repeat #d4eef7;
 }
 .myworks-item .myworks-add-text {
 	font-size: 13px;
@@ -116,7 +126,120 @@
 	width: 362px;
 	height: 493px;
 	background: #eff3f7;
+	box-shadow: 0px 6px 13px 4px rgba( 13, 16, 7, .5);
 	border-radius: 5px;
 	overflow: hidden;
 }	
+.popup-inner{
+	padding: 0 20px;
+}
+.form-label{
+	display: block;
+	margin-bottom: 10px;
+}
+.popup-title{
+	margin: 0;
+	margin-bottom: 10px;
+	font-family: "FiraSansRegular", "SansSerif";;
+	font-size: 25px;
+	font-weight: normal;
+	color: #fff;
+	background: #48cbe8;
+	border-bottom: 9px solid #67dffa;
+	line-height: 44px;
+	padding: 0 13px;
+}
+.form-title{
+	color: #959aa8;
+}
+.form-input{
+	width: 300px;
+	font-size: 0.8em;
+	color: #48cbe8;
+	border-radius: 4px;
+	border:1px solid #48cbe8;
+	padding:10px;
+	line-height: 19px;
+	overflow: hidden;
+}
+.form-input-file{
+	line-height: 41px;
+	height: 19px;
+	position: relative;
+	cursor: pointer;
+	background: #fff;
+}
+.form-input-file-origin {
+  position: absolute;
+  top: 0;
+  left: -9999px; 
+}
+.form-input-fake {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 52px;
+}
+.form-input-file-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 268px;
+  overflow: hidden;
+  background: url("../img/input-file.png") center center no-repeat; 
+}
+.form-textarea{
+	width: 300px;
+	resize:none;
+	height: 90px;
+	color:#48cbe8; 
+}
+.form-submit-wrap{
+	text-align: center;
+}
+.form-submit{
+  width: 140px;
+  height: 31px;
+  border-radius: 5px;
+  background: #48cbe8;
+  border: none;
+  box-shadow: 0 2px 0 #3ba8c0;
+  color: #fff;
+  font-size: 1.2em;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+.form-submit:hover{
+	margin: 2px auto -2px;
+	box-shadow: none;
+}
+.popup-close{
+	position: absolute;
+	width: 25px;
+  	height: 25px;
+  	border-radius: 50%;
+  	border:2px solid #fff;
+  	font-size: 14px;
+  	top:10px;
+  	right: 10px;
+  	color:#fff;
+  	text-align: center;
+  	box-sizing:border-box;
+  	text-decoration: none;
+}
 
+
+::-webkit-input-placeholder {color:#54cee9; font-size: 13px; font-family:"FiraSansLight", "SansSerif"; }
+::-moz-placeholder          {color:#54cee9; font-size: 13px; font-family:"FiraSansLight", "SansSerif"; }/* Firefox 19+ */
+:-moz-placeholder           {color:#54cee9; font-size: 13px; font-family:"FiraSansLight", "SansSerif"; }/* Firefox 18- */
+:-ms-input-placeholder      {color:#54cee9; font-size: 13px; font-family:"FiraSansLight", "SansSerif"; }
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}

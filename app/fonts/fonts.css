@@ -39,6 +39,14 @@
 	font-weight: normal;
 }
 @font-face {
+	font-family: 'FiraSansRegular';
+	src: url('firasans-regular.eot');
+	src: url('firasans-regular.woff') format('woff'),
+		 url('firasans-regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
 	font-family: 'ProximaNovaCond-Semibold';
 	src: url('ProximaNovaCond-Semibold.eot');
 	src: url('ProximaNovaCond-Semibold.woff') format('woff'),

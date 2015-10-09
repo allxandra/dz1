@@ -1,6 +1,15 @@
 .variable-content{
 	margin-bottom: 15px;
-
+}
+.contact-form{
+  width: 100%;
+}
+.contactbox-wrap {
+  margin:0 auto 30px auto;
+  padding: 0 123px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -i-box-sizing: border-box;
 }
 .contactbox-header {
 	font-family: "FiraSansBook";
@@ -13,38 +22,40 @@
 	margin: 0 0 36px 0;
 	padding: 39px 0;
 }
-.contactbox-wrap {
-	width: 403px;
-	margin:0 auto 200px auto;
-	padding:0;
+.contactbox-about{
+  padding: 0;
+  width: 100%;
 }
 .contactbox-name, .contactbox-email{
- 	display: inline-block;
     margin-bottom: 10px;
     position: relative;
  }
+ .contactbox-name{
+  float: left;
+ }
  .contactbox-email {
  	margin-left: 15px;
- }
+  float: right;
+  }
 .contactbox-text{
 	display: block;
  	font-family: "FiraSansLight", "SansSerif";
-  	font-size: 19px;
-  	color: #848894;
+  font-size: 19px;
+  color: #848894;
 }
 .contactbox-input{
 	border: 1px solid #48cbe8;
-  	border-radius: 4px;
-  	color: #48cbe8;
-  	padding: 10px;
-  	height: 20px;
-  	width: 170px;
+  border-radius: 4px;
+  color: #48cbe8;
+  padding: 10px;
+  height: 20px;
+  width: 170px;
 }
 .contactbox-textarea{
-	width: 380px;
-  	height: 160px;
-  	resize:none;
-  	margin-bottom:5px;
+  width:383px;
+  height: 160px;
+  resize:none;
+  margin-bottom:5px;
 }
 
 ::-webkit-input-placeholder {color:#54cee9; font-size: 13px; font-family:"FiraSansLight", "SansSerif"; }
