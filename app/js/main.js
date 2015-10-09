@@ -14,7 +14,9 @@
                 e.preventDefault();
 
                 // Triggering bPopup when click event is fired
-                $('.popup').bPopup();
+                $('.popup').bPopup({
+                    closeClass:'popup-close'
+                });
 
             });
 
@@ -38,8 +40,5 @@ $('.form-input-file-origin').on('change', function(){ // по событию cha
     $('.form-input-fake').text(pureVal); // вставляем в блок с текстом имя файла
 
 });
-$('popup').bPopup({
-            closeClass:'.popup-close',
- });
 
 
