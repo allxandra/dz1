@@ -66,21 +66,21 @@
 									<div class="contactbox-about">
 										<div class="contactbox-name">
 											<span class="contactbox-text">Имя</span>
-											<input type="text" name="Имя" placeholder="Как к вам обращаться" class="contactbox-input">	
+											<input type="text" name="Имя" placeholder="Как к вам обращаться" class="contactbox-input" qtip-position="left" qtipcontent="Вы не ввели имя" id="name">	
 										</div>		
 										<div class="contactbox-email">						
 											<span class="contactbox-text">Email</span>
-											<input type="text" name="Email" placeholder="Куда мне писать" class="contactbox-input">
+											<input type="text" name="" value="" placeholder="Куда мне писать" class="contactbox-input" qtip-position="right" qtipcontent="Вы не ввели e-mail" id="email">
 										</div>
 									</div>								
 									<div class="contactbox-massege">
 										<span class="contactbox-text">Сообщение</span>
-										<textarea name="Сообщение" placeholder="Кратко в чем суть" class="contactbox-input contactbox-textarea"></textarea>
+										<textarea name="Сообщение" value="" placeholder="Кратко в чем суть" class="contactbox-input contactbox-textarea" qtip-position="left" qtipcontent="Что вы от меня хотите?" id="message"></textarea>
 									</div>
 									<div class="contactbox-check">
 										<span class="contactbox-text check-capcha">Введите код, указанный на картинке</span>
 										<div class="contactbox-massege-code">E0Ed3r</div>
-										<input type="text" name="Капча" placeholder="Введите код" class="contactbox-input contactbox-capcha">
+										<input type="text" name="Капча" value="" placeholder="Введите код" class="contactbox-input contactbox-capcha" qtip-position="left" qtipcontent="Вы не ввели код" id="code" >
 									</div>
 									<div class="contactbox-buttons">
 										<input type="submit" class="contact-button contact-button-submit" value="Отправить">
@@ -100,7 +100,10 @@
 			<div class="copyright">© 2015. "Это мой сайт, пожалуйста, не копируйте и не воруйте его"</div>
 		</div>
 	</footer>		
-	<script src="bower/jquery/jquery.js"></script>
+	<script src="bower/jquery/jquery.js"></script>	
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>		
+	<script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>	
 	<script src="js/main.js"></script>
 </body>
 </html>
