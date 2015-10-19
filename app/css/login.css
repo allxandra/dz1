@@ -18,7 +18,6 @@
   display: inline-block;
   vertical-align: middle;
   width: 590px;
-  height: 490px;
   border-radius: 3px;
   overflow: hidden;
   background-color: #eff3f7;
@@ -45,7 +44,7 @@
   text-align: center;
 }
 .auth-form-data{
-	margin-bottom: 11px;
+	margin-bottom: 25px;
   text-align: center;
 }
 .auth-form-label{
@@ -79,13 +78,11 @@
   background: #48cbe8;
   box-shadow: 0 4px 0 #3ba8c0;
 }
-.auth-form-data .last{
-  margin: 0;
-  padding: 0;
-}
+
 .auth-form-submit:hover{
-  margin: 24px 0 10px 0;
+  margin: 22px 0 0 0;
   box-shadow: none;
+  box-shadow: 0 0 0 #3ba8c0;
 }
 ::-webkit-input-placeholder {color:#54cee9; font-size: 17px; font-family:"FiraSansLight", "SansSerif"; }
 ::-moz-placeholder          {color:#54cee9; font-size: 17px; font-family:"FiraSansLight", "SansSerif"; }/* Firefox 19+ */

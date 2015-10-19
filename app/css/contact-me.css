@@ -101,17 +101,16 @@
 }
 .contact-button-submit{
 	background: #48cbe8;
-  	float: left;
   	position: relative;
   	overflow: hidden;
   	box-shadow: 0 2px 0 #3ba8c0;
 }
 .contact-button-clear{
   	background: #849db5;
-  	float: right;
   	position: relative;
   	overflow: hidden;
   	box-shadow: 0 2px 0 #687b8f;
+    margin-left: 121px;
 }
 .contact-button-submit:hover,
 .contact-button-clear:hover{
@@ -119,8 +118,33 @@
   -moz-transition: 0.3s ease;
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
-  transition: 0.3s ease;
-  margin: 2px 0 -2px;
+  transition: 0.3s ease;  
   box-shadow: none;
 }
-.placeholdr { color: gray }
+.contact-button-submit:hover{
+  margin: 2px 0 -2px;
+}
+.contact-button-clear:hover{
+  margin: 2px 0 -2px 121px;
+}
+
+.server-mes{
+  border-radius: 4px;
+  border: 1px solid;
+  font-size: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  display: none;
+  padding: 6px 12px;
+  margin-bottom: 6px;
+}
+#error-mes{
+  background-color: #fad2da;
+  border-color: #f97e76;
+  color: #f97e76;
+}
+.success-mes{
+  background-color: lightgreen;
+  border-color: #49bb7b;
+  color: #49bb7b;
+}

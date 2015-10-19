@@ -9,15 +9,17 @@
 	<meta name="description" content="portfolio">
 	<meta name="keywords" content="portfolio_loftschool, loftschool_homework">
 	<meta name="author" content="Alicia Gut">
+	<!-- Vendor CSS -->
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
+	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<!--favicon-->
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<!--bower CSS-->
-	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">	
 	<!--CSS-->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/about-me.css">
 	<link rel="stylesheet" href="css/contact-me.css">
+	<link rel="stylesheet" href="css/form_elements.css">
 	<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
 	<!--Modernizer-->
 	<script src="bower/modernizer/modernizr.js"></script>
@@ -43,8 +45,8 @@
 				<aside class="sidebar">
 					<nav class="navigation">
 						<ul class="navigation-list">
-							<li class="navigation-item"><a href="/index.html" class="navigation-link">Обо мне</a></li>
-							<li class="navigation-item"><a href="/my-work.html" class="navigation-link">Мои работы</a></li>
+							<li class="navigation-item"><a href="index.html" class="navigation-link">Обо мне</a></li>
+							<li class="navigation-item"><a href="my-work.html" class="navigation-link">Мои работы</a></li>
 							<li class="navigation-item current"><a href="#" class="navigation-link">Связаться со мной</a></li>
 						</ul>
 					</nav>
@@ -62,29 +64,32 @@
 						<h2 class="contactbox-header">У вас интересный проект? Напишите мне</h2>
 						<div class="aboutbox-body clearfix">
 							<div class="contactbox-wrap">
-								<form action="#" method="post" class="contact-form">
+								<form action="#" method="post" class="contact-form" id="contact-form">
+									<!-- Вывод сообщений с сервера -->
+	                              <div class="server-mes error-mes"></div>
+	                              <div class="server-mes success-mes"></div>
 									<div class="contactbox-about">
 										<div class="contactbox-name">
 											<span class="contactbox-text">Имя</span>
-											<input type="text" name="Имя" placeholder="Как к вам обращаться" class="contactbox-input" qtip-position="left" qtipcontent="Вы не ввели имя" id="name">	
+											<input type="text" name="Имя" placeholder="Как к вам обращаться" class="contactbox-input" qtip-position="left" qtip-content="Вы не ввели имя" id="name" value="">	
 										</div>		
 										<div class="contactbox-email">						
 											<span class="contactbox-text">Email</span>
-											<input type="text" name="" value="" placeholder="Куда мне писать" class="contactbox-input" qtip-position="right" qtipcontent="Вы не ввели e-mail" id="email">
+											<input type="text" name="" value="" placeholder="Куда мне писать" class="contactbox-input" qtip-position="right" qtip-content="Вы не ввели e-mail" id="email">
 										</div>
 									</div>								
 									<div class="contactbox-massege">
 										<span class="contactbox-text">Сообщение</span>
-										<textarea name="Сообщение" value="" placeholder="Кратко в чем суть" class="contactbox-input contactbox-textarea" qtip-position="left" qtipcontent="Что вы от меня хотите?" id="message"></textarea>
+										<textarea name="Сообщение" value="" placeholder="Кратко в чем суть" class="contactbox-input contactbox-textarea" qtip-position="left" qtip-content="Что вы от меня хотите?" id="message"></textarea>
 									</div>
 									<div class="contactbox-check">
 										<span class="contactbox-text check-capcha">Введите код, указанный на картинке</span>
 										<div class="contactbox-massege-code">E0Ed3r</div>
-										<input type="text" name="Капча" value="" placeholder="Введите код" class="contactbox-input contactbox-capcha" qtip-position="left" qtipcontent="Вы не ввели код" id="code" >
+										<input type="text" name="Капча" value="" placeholder="Введите код" class="contactbox-input contactbox-capcha" qtip-position="right" qtip-content="Вы не ввели код" id="code" >
 									</div>
 									<div class="contactbox-buttons">
-										<input type="submit" class="contact-button contact-button-submit" value="Отправить">
-		 								<input type="reset" class="contact-button contact-button-clear" value="Очистить">
+										<input type="submit" class="contact-button contact-button-submit clearfix" value="Отправить"  id="contactButtonSubmit">
+		 								<input type="reset" class="contact-button contact-button-clear clearfix" value="Очистить" id="contactButtonReset">
 									</div>
 								</form>
 							</div>
@@ -96,14 +101,18 @@
 	</div>
 	<footer class="page-footer">
 		<div class="container">
-			<div class="lock"><a href="/login.html" class="lock-inner">Войти</a></div>
+			<div class="lock"><a href="login.html" class="lock-inner">Войти</a></div>
 			<div class="copyright">© 2015. "Это мой сайт, пожалуйста, не копируйте и не воруйте его"</div>
 		</div>
-	</footer>		
+	</footer>	
+	<!-- vendor JS -->	
 	<script src="bower/jquery/jquery.js"></script>	
 	<script src="bower/qtip2/jquery.qtip.js"></script>
-	<script src="bower/qtip2/jquery.qtip.js"></script>		
 	<script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>	
+	<!-- JS -->
+	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/validation.js"></script>
+    <script src="js/contact_me.js"></script>
 </body>
 </html>
