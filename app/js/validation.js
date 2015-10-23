@@ -8,7 +8,7 @@ var validation = (function (){
 			validateForm = function (form) { // Проверяет, чтобы все поля формы были не пустыми. Если пустые - вызывает тултипы
 	      console.log('Проверяем форму');
 
-	      var elements = form.find('input, textarea').not('input[type="file"], input[type="hidden"]'),
+	      var elements = form.find('input, textarea, div.form-input').not('input[type="file"], input[type="hidden"]'),
 	          valid = true;
 
 	      $.each(elements, function(index, val) {
@@ -39,7 +39,7 @@ var validation = (function (){
 	      console.log('Очищаем форму');
 
 	      var form = $(this);
-	      form.find('.input, .textarea').trigger('hideTooltip'); // удаляем тултипы
+	      form.find('.input, .textarea, .form-input').trigger('hideTooltip'); // удаляем тултипы
 	      form.find('.has-error').removeClass('has-error'); // удаляем красную подсветку
 	      form.find('.error-mes, success-mes').text('').hide(); // очищаем и прячем сообщения с сервера
 	    },	     

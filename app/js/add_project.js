@@ -12,10 +12,11 @@ var addProject = (function (){
 			},
 			_showModal = function (){
       	console.log('Вызов модального окна');
+      	var form = $(this);
 	      $('.popup').bPopup({
 	        speed: 650,
 	        transition: 'slideDown',
-	        closeClass:'popup-close',
+	        closeClass:'popup-close',	     	          
 	        onClose: function () {
 	          form.find('.server-mes').text('').hide();
 	          this.find('.form').trigger("reset"); // сбрасываем форму
