@@ -20,6 +20,7 @@ var addProject = (function (){
 	        onClose: function () {
 	          form.find('.server-mes').text('').hide();
 	          this.find('.form').trigger("reset"); // сбрасываем форму
+	          validation.clearForm();	          
 	        }
 	      });
     	},

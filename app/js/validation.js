@@ -8,7 +8,7 @@ var validation = (function (){
 			validateForm = function (form) { // Проверяет, чтобы все поля формы были не пустыми. Если пустые - вызывает тултипы
 	      console.log('Проверяем форму');
 
-	      var elements = form.find('input, textarea, div.form-input').not('input[type="file"], input[type="hidden"]'),
+	      var elements = form.find('input, textarea').not('input[type="file"], input[type="hidden"]'),
 	          valid = true;
 
 	      $.each(elements, function(index, val) {
@@ -72,7 +72,7 @@ var validation = (function (){
 	        show: {
 	          event: 'show'
 	        },
-	        hide: 'unfocus',
+	        hide: 'keydown hideTooltip',	       
 	        position: position,
 	        style: {
 	          classes: 'qtip-mystyle qtip-rounded',
@@ -86,7 +86,8 @@ var validation = (function (){
 
 	return {
 		init: init,
-		validateForm: validateForm
+		validateForm: validateForm,
+		clearForm : _clearForm
 	};
 
 })();

@@ -12,11 +12,14 @@ $('.form-input-file-origin').on('change', function(){ // по событию cha
         regexp = /c:\\fakepath\\/gmi, //регулярное выражение для поиска
         pureVal = val.replace(regexp, ''); // заменяем то что нашли в строке - на пустоту
     
-    $('.form-input-fake').text(pureVal); // вставляем в блок с текстом имя файла
+    $('#file-name')
+        .val(pureVal)
+        .trigger('hideTooltip')
+        .removeClass('has-error'); // вставляем в блок с текстом имя файла
 
 });
 
 //Placeholder
 var fixPlaceholder = (function(){
-    $('input[placeholder], textarea[placeholder]').placeholder();
+    $('input, textarea').placeholder();
 })();

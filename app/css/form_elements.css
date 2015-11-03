@@ -49,6 +49,12 @@ input, textarea, button {
 	border-radius: 4px;
 	outline: none;
 }
+.form-input-fake {
+	width: 100%;
+	background-color: #fff;
+	outline: none;
+	border: none;
+}
 .has-error{
 	background-color: #fad2d1 !important;
 	border-color: #f97e76 !important;
